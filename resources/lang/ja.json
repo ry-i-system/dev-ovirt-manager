@@ -1,0 +1,13 @@
+{
+    "Servers": "サーバー",
+    "Login": "ログイン",
+    "Logout": "ログアウト",
+    "Register": "ユーザー登録",
+    "Dashboard": "ダッシュボード",
+    "Home": "ホーム",
+    "E-Mail Address": "メールアドレス",
+    "Password": "パスワード",
+    "Remember Me": "パスワードを記憶します",
+    "Forgot Your Password?": "パスワードを忘れましたか？",
+    "Confirm Password": "パスワード確認用"
+}

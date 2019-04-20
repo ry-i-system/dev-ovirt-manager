@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+/**
+ * 言語切替
+ */
+Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/servers', 'ServerController@index')->name('servers');

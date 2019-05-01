@@ -13,5 +13,10 @@
     "Confirm Password": "パスワード確認用",
     "Document Links": "各種リンク",
     "About user registration": "ユーザー登録について",
-    "Please contact your system administrator if you wish to register.": "ユーザー登録をご希望の方はシステム管理者までご連絡ください。"
+    "Please contact your system administrator if you wish to register.": "ユーザー登録をご希望の方はシステム管理者までご連絡ください。",
+    "Reset Password": "パスワード再設定",
+    "Send Password Reset Link": "パスワード再設定リンクを送信",
+    "OvirtManager usage manual": "OvirtManager 利用マニュアル",
+    "OvirtManager source code (GitHub)": "OvirtManager ソースコード (GitHub)",
+    "Servers List": "サーバーリスト"
 }

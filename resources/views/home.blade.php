@@ -13,7 +13,25 @@
                                     {{ session('status') }}
                                 </div>
                             @endif
-                            {{ __('Login') }}
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <td colspan="2">{{ __('Physical server information') }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CPU {{ __('use rate') }}</td>
+                                        <td>100 %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{ __('Memory') }} {{ __('use rate') }}</td>
+                                        <td>100 %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{ __('Storage') }} {{ __('use rate') }}</td>
+                                        <td>100 %</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

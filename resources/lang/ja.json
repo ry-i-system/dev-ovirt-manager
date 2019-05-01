@@ -19,8 +19,11 @@
     "OvirtManager usage manual": "OvirtManager 利用マニュアル",
     "OvirtManager source code (GitHub)": "OvirtManager ソースコード (GitHub)",
     "Servers List": "サーバーリスト",
-    "Physical server information": "物理サーバー情報",
+    "Physical server status": "物理サーバー状況",
     "use rate": "使用率",
     "Memory": "メモリ",
-    "Storage": "ストレージ"
+    "Storage": "ストレージ",
+    "IP address status": "IPアドレス状況",
+    "In use": "使用中",
+    "Available": "利用可"
 }

@@ -13,11 +13,9 @@
                                     {{ session('status') }}
                                 </div>
                             @endif
-                            <div class="table-responsive">
+                            <p>{{ __('Physical server status') }}</p>
+                            <div class="table-responsive col-md-6">
                                 <table class="table table-bordered">
-                                    <tr>
-                                        <td colspan="2">{{ __('Physical server information') }}</td>
-                                    </tr>
                                     <tr>
                                         <td>CPU {{ __('use rate') }}</td>
                                         <td>100 %</td>
@@ -29,6 +27,28 @@
                                     <tr>
                                         <td>{{ __('Storage') }} {{ __('use rate') }}</td>
                                         <td>100 %</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <br>
+                            <p>{{ __('IP address status') }}</p>
+                            <div class="table-responsive col-md-6">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <td>VLAN1 {{ __('In use') }}</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VLAN1 {{ __('Available') }}</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VLAN2 {{ __('In use') }}</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VLAN2 {{ __('Available') }}</td>
+                                        <td>100</td>
                                     </tr>
                                 </table>
                             </div>

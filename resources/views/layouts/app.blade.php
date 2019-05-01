@@ -96,7 +96,7 @@
     </div>
     <br><br>
     <footer id="footer" class="text-center">
-        <p>Copyright 2019 &copy; Binsan </p>
+        <p>Copyright 2019 &copy; ry-i-system </p>
     </footer>
 
 </body>

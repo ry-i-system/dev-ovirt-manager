@@ -10,5 +10,8 @@
     "Password": "パスワード",
     "Remember Me": "パスワードを記憶します",
     "Forgot Your Password?": "パスワードを忘れましたか？",
-    "Confirm Password": "パスワード確認用"
+    "Confirm Password": "パスワード確認用",
+    "Document Links": "各種ドキュメント",
+    "About user registration": "ユーザー登録について",
+    "Please contact your system administrator if you wish to register.": "ユーザー登録をご希望の方はシステム管理者までご連絡ください。"
 }

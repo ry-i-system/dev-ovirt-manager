@@ -94,6 +94,7 @@
             @yield('content')
         </main>
     </div>
+    <br><br>
     <footer id="footer" class="text-center">
         <p>Copyright 2019 &copy; Binsan </p>
     </footer>

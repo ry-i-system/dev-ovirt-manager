@@ -51,11 +51,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
-                                @if (Route::has('register'))
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                    </li>
-                                @endif
                             @else
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/home') }}">{{ __('Home') }}</a>
@@ -83,24 +78,42 @@
                 </div>
             </nav>
         </div>
-
-        <div class="flex-center position-ref full-height">
-            <div class="content">
-                <div class="title m-b-md">
-                    {{ config('app.name', 'Laravel') }}
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+        <main class="py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">{{ __('Document Links') }}</div>
+                            <div class="card-body">
+                                <a href="https://laravel.com/docs">Docs</a><br>
+                                <a href="https://laracasts.com">Laracasts</a><br>
+                                <a href="https://laravel-news.com">News</a><br>
+                                <a href="https://blog.laravel.com">Blog</a><br>
+                                <a href="https://nova.laravel.com">Nova</a><br>
+                                <a href="https://forge.laravel.com">Forge</a><br>
+                                <a href="https://github.com/laravel/laravel">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
+        <main class="py-1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">{{ __('About user registration') }}</div>
+                            <div class="card-body">
+                                <p>{{ __('Please contact your system administrator if you wish to register.') }}</p>
+                                <a>{{ __('E-Mail Address') }} : xxxx.xxxx@xxxx.xxxx.xx</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <br><br>
         <footer id="footer" class="text-center">
             <p>Copyright 2019 &copy; Binsan </p>
         </footer>

@@ -95,5 +95,8 @@
                 </div>
             </div>
         </div>
+        <footer id="footer" class="text-center">
+            <p>Copyright 2019 &copy; Binsan </p>
+        </footer>
     </body>
 </html>

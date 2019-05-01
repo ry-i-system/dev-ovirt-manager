@@ -11,17 +11,18 @@
 |
 */
 
+// Go Welcome
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
-/**
- * 言語切替
- */
+// Change Languages
 Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
 
+// Go Home
 Route::get('/home', 'HomeController@index')->name('home');
 
+// Go Servers
 Route::get('/servers', 'ServerController@index')->name('servers');

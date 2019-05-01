@@ -76,17 +76,6 @@
                             <a href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                     @endauth
-                    <!-- 言語切り替え -->
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Config::get('languages')[App::getLocale()] }}<span class="caret"></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        @foreach (Config::get('languages') as $lang => $language)
-                            @if ($lang != App::getLocale())
-                                <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}">{{$language}}</a>
-                            @endif
-                        @endforeach
-                    </div>
                 </div>
             @endif
 

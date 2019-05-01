@@ -66,6 +66,7 @@
     <body>
         <div class="flex-center position-ref full-height">
             <!-- 言語切り替え -->
+            <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     {{ Config::get('languages')[App::getLocale()] }}<span class="caret"></span>
                 </a>
@@ -76,6 +77,7 @@
                         @endif
                     @endforeach
                 </div>
+            </li>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth

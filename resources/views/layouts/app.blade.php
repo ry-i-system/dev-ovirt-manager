@@ -18,12 +18,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow">
-            <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
@@ -32,16 +31,6 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-                        @guest
-                        @else
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('servers') }}">{{ __('Servers') }}</a>
-                            </li>
-                        @endguest
-                    </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- 言語切り替え -->
@@ -91,14 +80,58 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                    <div class="sidebar-sticky">
+                        <ul class="nav flex-column">
+                            <br><br><br>
+                            <li class="nav-item">
+                                <a class="nav-link mr-auto" href="{{ route('servers') }}">{{ __('Servers') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <span data-feather="file"></span>
+                                Orders
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <span data-feather="shopping-cart"></span>
+                                Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <span data-feather="users"></span>
+                                Customers
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <span data-feather="bar-chart-2"></span>
+                                Reports
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <span data-feather="layers"></span>
+                                Integrations
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><br><br><br>
+                    @yield('content')
+                </main>
+            </div>
+        </div>
     </div>
     <br>
     <footer id="footer" class="text-center">
         <p>Copyright 2019 &copy; ry-i-system </p>
     </footer>
-
 </body>
 </html>

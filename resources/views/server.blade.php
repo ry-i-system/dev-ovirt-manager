@@ -8,8 +8,7 @@
                 <div class="card-header">{{ __('Servers List') }}</div>
 
                 <div class="card-body">
-                    {{ __('Servers') }}
-                    {{$vmlists}}
+                    {{ $vmlists }}
                 </div>
             </div>
         </div>

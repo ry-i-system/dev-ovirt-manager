@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-header">{{ __('Dashboard') }}</div>
 
                         <div class="card-body">
@@ -61,7 +61,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-header">{{ __('Document Links') }}</div>
                         <div class="card-body">
                             <a href="">{{ __('OvirtManager usage manual') }}</a><br>

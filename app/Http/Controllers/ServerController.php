@@ -23,6 +23,8 @@ class ServerController extends Controller
      */
     public function index()
     {
-        return view('server');
+        $vms = new OvirtAccessController();
+        $vmlists = $vms->vms();
+        return view('server', ['vmlists' => $vmlists]);
     }
 }

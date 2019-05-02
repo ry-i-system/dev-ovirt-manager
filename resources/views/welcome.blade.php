@@ -18,11 +18,11 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+        <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
     </head>
     <body>
         <div id="app">
-            <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
@@ -55,7 +55,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8">
-                        <div class="card">
+                        <div class="card shadow">
                             <div class="card-header">{{ __('Login') }}</div>
                             <div class="card-body">
                                 <form method="POST" action="{{ route('login') }}">
@@ -125,7 +125,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8">
-                        <div class="card">
+                        <div class="card shadow">
                             <div class="card-header">{{ __('About user registration') }}</div>
                             <div class="card-body">
                                 <p class="text-md-center">{{ __('Please contact your system administrator if you wish to register.') }}</p>

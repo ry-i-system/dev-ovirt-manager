@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                        <!-- 言語切り替え -->
+                        <!-- Change Language -->
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Config::get('languages')[App::getLocale()] }}<span class="caret"></span>
@@ -80,6 +80,7 @@
             </div>
         </nav>
 
+        <!-- Left Side Menu -->
         <div class="container-fluid">
             <div class="row">
                 <nav class="col-md-2 d-none d-md-block bg-light sidebar">
@@ -88,36 +89,6 @@
                             <br><br><br>
                             <li class="nav-item">
                                 <a class="nav-link mr-auto" href="{{ route('servers') }}">{{ __('Servers') }}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                <span data-feather="file"></span>
-                                Orders
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                <span data-feather="shopping-cart"></span>
-                                Products
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                <span data-feather="users"></span>
-                                Customers
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                <span data-feather="bar-chart-2"></span>
-                                Reports
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                <span data-feather="layers"></span>
-                                Integrations
-                                </a>
                             </li>
                         </ul>
                     </div>

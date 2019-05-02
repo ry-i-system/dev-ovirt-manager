@@ -70,4 +70,20 @@
         </div>
     </div>
 </div>
+<br>
+<main class="py-1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header">{{ __('About user registration') }}</div>
+                    <div class="card-body">
+                        <p class="text-md-center">{{ __('Please contact your system administrator if you wish to register.') }}</p>
+                        <p class="text-md-center">{{ __('E-Mail Address') }} : xxxx.xxxx@xxxx.xxxx.xx</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 @endsection

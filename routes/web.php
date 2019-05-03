@@ -24,5 +24,14 @@ Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@swit
 // Go Home
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Go Servers
+// Go Server
 Route::get('/servers', 'ServerController@index')->name('servers');
+
+// Go IPadder
+Route::get('/ipadders', 'IpadderController@index')->name('ipadders');
+
+// Go Contact
+Route::get('/contacts', 'ContactController@index')->name('contacts');
+
+// Go Account
+Route::get('/account', 'AccountController@index')->name('accounts');

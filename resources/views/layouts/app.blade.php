@@ -88,7 +88,16 @@
                         <ul class="nav flex-column">
                             <br><br><br>
                             <li class="nav-item">
-                                <a class="nav-link mr-auto" href="{{ route('servers') }}">{{ __('Servers') }}</a>
+                                <a role="button" class="nav-link mr-auto btn btn-outline-secondary btn-sm" href="{{ route('servers') }}">{{ __('Servers') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a role="button" class="nav-link mr-auto btn btn-outline-secondary btn-sm" href="{{ route('ipadders') }}">{{ __('IP Address') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a role="button" class="nav-link mr-auto btn btn-outline-secondary btn-sm" href="{{ route('accounts') }}">{{ __('Account Information') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a role="button" class="nav-link mr-auto btn btn-outline-secondary btn-sm" href="{{ route('contacts') }}">{{ __('Contact Us') }}</a>
                             </li>
                         </ul>
                     </div>

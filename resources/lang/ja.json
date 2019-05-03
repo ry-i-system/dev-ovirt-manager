@@ -18,12 +18,16 @@
     "Send Password Reset Link": "パスワード再設定リンクを送信",
     "OvirtManager usage manual": "OvirtManager 利用マニュアル",
     "OvirtManager source code (GitHub)": "OvirtManager ソースコード (GitHub)",
-    "Servers List": "サーバーリスト",
+    "Servers List": "サーバー 一覧",
     "Physical server status": "物理サーバー状況",
     "use rate": "使用率",
     "Memory": "メモリ",
     "Storage": "ストレージ",
     "IP address status": "IPアドレス状況",
     "In use": "使用中",
-    "Available": "使用可"
+    "Available": "使用可",
+    "IP Address": "IPアドレス",
+    "IP Address List": "IPアドレス 一覧",
+    "Contact Us": "お問い合わせ",
+    "Account Information": "アカウント情報"
 }

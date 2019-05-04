@@ -9,6 +9,7 @@
 
                 <div class="card-body">
                     <pre>{{ $vms }}</pre>
+                    <pre>{{ $vmlists }}</pre>
                 </div>
             </div>
         </div>

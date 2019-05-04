@@ -14,8 +14,12 @@ class IpadderController extends Controller
 
     public function index()
     {
+        // Get VLAN list from DB
         $db_obj = new DbAccess();
         $vlan1_lists = $db_obj->get_vlan1_lists();
-        return view('ipadder', ['vlan1_lists' => $vlan1_lists]);
+        $vlan2_lists = $db_obj->get_vlan2_lists();
+
+        // Pass array to the view
+        return view('ipadder', ['vlan1_lists' => $vlan1_lists, 'vlan2_lists' => $vlan2_lists]);
     }
 }

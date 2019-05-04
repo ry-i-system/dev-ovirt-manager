@@ -7,6 +7,13 @@ use Illuminate\Support\Facades\DB;
 
 class DbAccess extends Model
 {
+    // Get VM Lists All
+    public function get_vmlists()
+    {
+        $result = DB::table('vmlists')->get();
+        return $result;
+    }
+
     // Get VLAN1 Lists All
     public function get_vlan1_lists()
     {

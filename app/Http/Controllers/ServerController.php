@@ -15,8 +15,15 @@ class ServerController extends Controller
 
     public function index()
     {
+        // Get VM list from DB
+        $db_obj = new DbAccess();
+        $vmlists = $db_obj->get_vmlists();
+
+        // Get VM List from Ovirt API
         $oa_obj = new OvirtAccess();
         $vms = $oa_obj->get_vms();
-        return view('server', ['vms' => $vms]);
+
+        // Pass array to the view
+        return view('server', ['vms' => $vms, 'vmlists' => $vmlists]);
     }
 }

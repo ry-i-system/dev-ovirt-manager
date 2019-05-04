@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Account Information') }}</div>
 
                 <div class="card-body">
-                    <pre></pre>
+                <pre>{{ $users }}</pre>
                 </div>
             </div>
         </div>

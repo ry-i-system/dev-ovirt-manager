@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\DbAccess;
 
 class AccountController extends Controller
 {
@@ -13,6 +14,8 @@ class AccountController extends Controller
 
     public function index()
     {
-        return view('account');
+        $db_obj = new DbAccess();
+        $users = $db_obj->get_users();
+        return view('account', ['users' => $users]);
     }
 }

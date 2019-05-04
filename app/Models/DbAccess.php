@@ -20,4 +20,11 @@ class DbAccess extends Model
         $result = DB::table('vlan2_lists')->get();
         return $result;
     }
+
+    // Get Users All
+    public function get_users()
+    {
+        $result = DB::table('users')->get();
+        return $result;
+    }
 }

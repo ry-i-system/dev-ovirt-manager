@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('IP Address List') }}</div>
 
                 <div class="card-body">
-                    <pre></pre>
+                    <pre>{{ $vlan1_lists }}</pre>
                 </div>
             </div>
         </div>

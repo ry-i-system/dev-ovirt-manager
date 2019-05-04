@@ -3,28 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\OvirtAccess;
+use App\Models\DbAccess;
 
 class ServerController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
     public function index()
     {
-        $vms = new OvirtAccessController();
-        $vmlists = $vms->vms();
-        return view('server', ['vmlists' => $vmlists]);
+        $oa_obj = new OvirtAccess();
+        $vms = $oa_obj->get_vms();
+        return view('server', ['vms' => $vms]);
     }
 }

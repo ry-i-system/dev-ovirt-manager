@@ -10,9 +10,7 @@ use Illuminate\Support\Facades\Session;
 
 class LanguageController extends Controller
 {
-    /**
-     *  言語切り替え処理
-     */
+    // Change Language
     public function switchLang($lang)
     {
         if (array_key_exists($lang, Config::get('languages'))) {

@@ -3,26 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\DbAccess;
 
 class IpadderController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
     public function index()
     {
-        return view('ipadder');
+        $db_obj = new DbAccess();
+        $vlan1_lists = $db_obj->get_vlan1_lists();
+        return view('ipadder', ['vlan1_lists' => $vlan1_lists]);
     }
 }

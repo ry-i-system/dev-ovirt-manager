@@ -8,7 +8,24 @@
                 <div class="card-header">{{ __('Account Information') }}</div>
 
                 <div class="card-body">
-                <pre>{{ $users }}</pre>
+                    <div class="table-responsive-sm">
+                        <table class="table table-bordered table-sm">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>{{ __('ID') }}</th>
+                                    <td>{{ $user->id }}</td>
+                                </tr>
+                                <tr>
+                                    <th>{{ __('Name') }}</th>
+                                    <td>{{ $user->name }}</td>
+                                </tr>
+                                <tr>
+                                    <th>{{ __('E-Mail Address') }}</th>
+                                    <td>{{ $user->email }}</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

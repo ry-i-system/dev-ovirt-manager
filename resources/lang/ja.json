@@ -29,5 +29,17 @@
     "IP Address": "IPアドレス",
     "IP Address List": "IPアドレス 一覧",
     "Contact Us": "お問い合わせ",
-    "Account Information": "アカウント情報"
+    "Account Information": "アカウント情報",
+    "Used VM": "使用サーバー",
+    "Status": "ステータス",
+    "Comment": "コメント",
+    "Edit": "編集",
+    "Used Network": "ネットワークで使用中",
+    "Unused": "未使用",
+    "Network Address": "ネットワークアドレス",
+    "Broadcast Address": "ブロードキャストアドレス",
+    "Used Virtual IP": "VIPで使用中",
+    "Used Server": "サーバーで使用中",
+    "Used Printer": "プリンターで使用中",
+    "Change Password": "パスワード変更"
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\DbAccess;
+use Illuminate\Support\Facades\Auth;
 
 class AccountController extends Controller
 {
@@ -14,8 +15,7 @@ class AccountController extends Controller
 
     public function index()
     {
-        $db_obj = new DbAccess();
-        $users = $db_obj->get_users();
-        return view('account', ['users' => $users]);
+        $user = Auth::user();
+        return view('account', ['user' => $user]);
     }
 }

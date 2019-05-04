@@ -15,7 +15,8 @@ class OvirtAccess
         curl_setopt($curl, CURLOPT_HTTPHEADER, array('Version: 4', 'Accept: application/json'));
         $result = curl_exec($curl);
         curl_close($curl);
-        return $result;
+        $json = json_decode($result, true);
+        return $json;
     }
 
     // Get VM Lists All

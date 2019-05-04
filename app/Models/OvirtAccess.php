@@ -12,11 +12,10 @@ class OvirtAccess
         curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $req_prm);
         curl_setopt($curl, CURLOPT_USERPWD, config('app.ovirt_username') . ':' . config('app.ovirt_password'));
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Version: 4', 'Accept: application/xml'));
+        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Version: 4', 'Accept: application/json'));
         $result = curl_exec($curl);
         curl_close($curl);
-        $json = json_encode($result);
-        return $json;
+        return $result;
     }
 
     // Get VM Lists All

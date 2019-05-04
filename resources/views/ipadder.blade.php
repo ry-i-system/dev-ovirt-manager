@@ -54,8 +54,51 @@
                         </div>
                     </form>
                     <br>
-                    <p>VLAN2</p>
-                    <pre>{{ $vlan2_lists }}</pre>
+                    <strong>VLAN2</strong>
+                    <form name="vlan2_ipaddr" method="POST" action="/ipaddr/vlan2">
+                        @csrf
+                        <div class="table-responsive-sm common-table">
+                            <table class="table table-bordered table-sm">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>{{ __('IP Address') }}</th>
+                                        <th>{{ __('Used VM') }}</th>
+                                        <th>{{ __('Status') }}</th>
+                                        <th>{{ __('Comment') }}</th>
+                                        <th>{{ __('Edit') }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                @foreach ($vlan2_lists as $vlan2_list)
+                                    <tr>
+                                        <td>{{ $vlan2_list->vlan2_ipaddr }}</td>
+                                        <td>{{ $vlan2_list->vm_name }}</td>
+                                        @switch($vlan2_list->use_flag)
+                                            @case(0)
+                                                <td>{{ __('Used Server') }}</td>
+                                                @break
+                                            @case(1)
+                                                <td>{{ __('Used Virtual IP') }}</td>
+                                                @break
+                                            @case(2)
+                                                <td>{{ __('Used Network') }}</td>
+                                                @break
+                                            @case(3)
+                                                <td>{{ __('Used Printer') }}</td>
+                                                @break
+                                            @case(4)
+                                                <td>{{ __('Unused') }}</td>
+                                                @break
+                                        @endswitch
+                                        <td>{{ __($vlan2_list->comment) }}</td>
+                                        <td><input type="submit" class="btn btn-outline-secondary btn-sm" value="{{ __('Edit') }}"></td>
+                                        <input type="hidden" value="{{ $vlan2_list->vlan2_ipaddr }}">
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
